@@ -1,0 +1,40 @@
+1. pwd 
+/home/freeai
+
+2. git clone https://github.com/oddratios/webapp
+
+3. mkvirtualenv --python=/usr/bin/python3.5 freeai.space
+
+4. pip install django==2.2.5
+
+go to webb add virtualenv name : freeai.space   ----
+
+click on wsgi code file
+
+import django.core.handlers.wsgi
+application = django.core.handlers.wsgi.WSGIHandler()
+
+path : /home/freeai/webapp/django_freeaispace
+
+------------
+SETTING.py
+
+ALLOWED_HOSTS = ['freeai.pythonanywhere.com']
+STATIC_ROOT = '/home/freeai/webapp/django_freeaispace/static'
+
+---------------
+
+-----
+wsgi.py
+
+path = '/home/freeai/webapp/django_freeaispace'
+
+os.environ['DJANGO_SETTINGS_MODULE'] = 'django_freeaispace.settings'
+-------
+python manage.py collectstatic
+
+then addd static into WEB file
+
+url : /static/
+directory: /home/freeai/webapp/django_freeaispace/static
+ 

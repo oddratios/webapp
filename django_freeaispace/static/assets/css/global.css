@@ -1,4 +1,4 @@
-/*** 
+/***
 
 ====================================================================
 	Reset
@@ -13,7 +13,7 @@
 	outline: none;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Global Settings
@@ -43,7 +43,7 @@ body {
 
 .large-container{
   max-width: 1690px;
-  padding: 0px 15px;
+  padding: 0px 10px;
   margin: 0 auto;
 }
 
@@ -96,7 +96,7 @@ input,button,select,textarea{
 ul,li{
   list-style:none;
   padding:0px;
-  margin:0px; 
+  margin:0px;
 }
 
 input{
@@ -235,9 +235,9 @@ img {
 .handle-preloader .animation-preloader .spinner{
   animation: spinner 1s infinite linear;
   border-radius: 50%;
-  height: 170px;
-  margin: 0 auto 45px auto;
-  width: 170px;
+  height: 6em;
+  margin: 0 auto 15px auto;
+  width: 6em;
 }
 
 .handle-preloader .animation-preloader .txt-loading {
@@ -308,14 +308,14 @@ img {
 
 @media screen and (max-width: 767px) {
   .handle-preloader .animation-preloader .spinner {
-    height: 8em;
-    width: 8em;
+    height: 5em;
+    width: 5em;
   }
 }
 @media screen and (max-width: 500px) {
   .handle-preloader .animation-preloader .spinner {
-    height: 7em;
-    width: 7em;
+    height: 5em;
+    width: 5em;
   }
   .handle-preloader .animation-preloader .txt-loading .letters-loading {font-size: 40px; letter-spacing: 10px;}
 }
